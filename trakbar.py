@@ -19,3 +19,14 @@ def nothing(x):
         k=cv2.waitKey(1)&0xFFFF
         if k==27:
             break
+        
+        
+        r=cv2.getTrackbarPos('R','image')
+        g=cv2.getTrackbarPos('G','image')
+        b=cv2.getTrackbarPos('B','image')
+        s=cv2.getTrackbarPos('switch','image')
+        if s==0:
+            img[:]=0
+        else:
+            img[:]=[b,g,r]
+cv2.destroyAllWindows()        
