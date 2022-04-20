@@ -29,4 +29,5 @@ def nothing(x):
             img[:]=0
         else:
             img[:]=[b,g,r]
-cv2.destroyAllWindows()        
+
+        cv2.destroyAllWindows()        
